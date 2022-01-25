@@ -1,4 +1,4 @@
-# Contributing to Datatracker
+# Contributing to IETF_PROJECT_NAME
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
@@ -27,13 +27,9 @@ Before going any further, make sure you read the [code of conduct](CODE_OF_CONDU
 
 ## Workflow Overview
 
-The datatracker project uses the **Git Feature Workflow with Develop Branch** model.
+The IETF_PROJECT_NAME project uses the **Git Feature Workflow** model.
 
-It consists of two primary branches:
-
-**Main** - The main branch always reflects a production-ready state. Any push to this branch will trigger a deployment to production. Developers never push code directly to this branch.
-
-**Develop** - The develop branch contains the latest development changes for the next release. This is where new commits are merged.
+It consists of a **Main** branch which reflects the latest development state. New features / bug fixes are added to this branch until a new release is created, which creates a snapshot of the current branch state and perform deployment tasks.
 
 A typical development workflow:
 
@@ -46,16 +42,16 @@ A typical development workflow:
 7. [Fast-forward (sync)](#sync-your-fork) your forked develop branch to include the latest changes made by all developers.
 8. Repeat this workflow from step 2.
 
-![](assets/docs/workflow-diagram.jpg)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/workflow-diagram.jpg)
 
 ## Creating a Fork
 
-As a general rule, work is never done directly on the datatracker repository. You instead [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the project. Creating a "fork" is producing a personal copy of the datatracker project. Forks act as a sort of bridge between the original repository and your personal copy.
+As a general rule, work is never done directly on the IETF_PROJECT_NAME repository. You instead [create a fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) of the project. Creating a "fork" is producing a personal copy of the IETF_PROJECT_NAME project. Forks act as a sort of bridge between the original repository and your personal copy.
 
-1. Navigate to https://github.com/ietf-tools/datatracker
+1. Navigate to https://github.com/ietf-tools/IETF_PROJECT_NAME
 2. Click the **Fork** button. *You may be prompted to select where the fork should be created, in which case you should select your personal GitHub account.*
 
-![](assets/docs/fork-button.jpg)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/fork-button.jpg)
 
 Your personal fork contains all the branches / contents of the original repository as it was at the exact moment you created the fork. You are free to create new branches or modify existing ones on your personal fork, as it won't affect the original repository.
 
@@ -63,13 +59,13 @@ Note that forks live on GitHub and not locally on your personal machine. To get 
 
 ## Cloning a Fork
 
-Right now, you have a fork of the datatracker repository, but you don't have the files in that repository locally on your computer.
+Right now, you have a fork of the IETF_PROJECT_NAME repository, but you don't have the files in that repository locally on your computer.
 
-After forking the datatracker repository, you should have landed on your personal forked copy. If that's not the case, make sure you are on the fork (e.g. `john-doe/datatracker` and not the original repository `ietf-tools/datatracker`).
+After forking the IETF_PROJECT_NAME repository, you should have landed on your personal forked copy. If that's not the case, make sure you are on the fork (e.g. `john-doe/IETF_PROJECT_NAME` and not the original repository `ietf-tools/IETF_PROJECT_NAME`).
 
 Above the list of files, click the **Code** button. A clone dialog will appear.
 
-![](assets/docs/code-button.png)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/code-button.png)
 
 There are several ways to clone a repository, depending on your personal preferences. Let's go through them...
 
@@ -85,9 +81,9 @@ There are several ways to clone a repository, depending on your personal prefere
 2. In a terminal window, navigate to where you want to work. Subfolders will be created for each project you clone. **DO NOT** create empty folders for projects to be cloned. This is done automatically by git.
 3. Type `git clone` and then paste the URL you just copied, e.g.:
 ```sh
-git clone https://github.com/YOUR-USERNAME/datatracker
+git clone https://github.com/YOUR-USERNAME/IETF_PROJECT_NAME
 ```
-4. Press **Enter**. Your local clone will be created in a subfolder named `datatracker`.
+4. Press **Enter**. Your local clone will be created in a subfolder named `IETF_PROJECT_NAME`.
 
 ### Using GitHub Desktop / GitKraken
 
@@ -107,22 +103,22 @@ The GitHub CLI offers tight integration with GitHub.
 
 1. Install the [GitHub CLI](https://cli.github.com/).
 2. In a terminal window, navigate to where you want to work. Subfolders will be created for each project you clone. **DO NOT** create empty folders for projects to be cloned. This is done automatically by git.
-3. Type `gh repo clone` followed by `YOUR-USERNAME/datatracker` (replacing YOUR-USERNAME with your GitHub username), e.g.:
+3. Type `gh repo clone` followed by `YOUR-USERNAME/IETF_PROJECT_NAME` (replacing YOUR-USERNAME with your GitHub username), e.g.:
 ```sh
-gh repo clone john-doe/datatracker
+gh repo clone john-doe/IETF_PROJECT_NAME
 ```
-4. Press **Enter**. Your local clone will be created in a subfolder named `datatracker`.
+4. Press **Enter**. Your local clone will be created in a subfolder named `IETF_PROJECT_NAME`.
 
 ## Create a Local Branch
 
-While you could *technically* work directly on the develop branch, it is best practice to create a branch for the feature / fix you are working on. It also makes it much easier to fast-forward your forks develop branch to the match the source repository.
+While you could *technically* work directly on the main branch, it is best practice to create a branch for the feature / fix you are working on. It also makes it much easier to fast-forward your forks main branch to the match the source repository.
 
 1. From a terminal window, nagivate to the project directory you cloned earlier.
-2. First, make sure you are on the `develop` branch.:
+2. First, make sure you are on the `main` branch.:
 ```sh
-git checkout develop
+git checkout main
 ```
-3. Let's create a branch named `feature-1` based on the `develop` branch:
+3. Let's create a branch named `feature-1` based on the `main` branch:
 ```sh
 git checkout -b feature-1
 ```
@@ -173,33 +169,33 @@ git push origin feature-1
 
 ## Create a Pull Request
 
-When your feature / fix is ready to be merged with the source repository `develop` branch, it's time to create a **Pull Request (PR)**.
+When your feature / fix is ready to be merged with the source repository `main` branch, it's time to create a **Pull Request (PR)**.
 
 On GitHub, navigate to your branch (in your forked repository). A yellow banner will invite you to **Compare & pull request**. You can also click the **Contribute** dropdown to initiate a PR.
 
-![](assets/docs/pr-buttons.png)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/pr-buttons.png)
 
-Make sure the base repository is set to `ietf-tools/datatracker` with the branch `develop` (this is the destination):
+Make sure the base repository is set to `ietf-tools/IETF_PROJECT_NAME` with the branch `main` (this is the destination):
 
-![](assets/docs/pr-form.png)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/pr-form.png)
 
 Enter a title and description of what your PR includes and click **Create pull request** when ready.
 
 Your PR will then be reviewed by the lead developer / other developers. Automated tests will also run on your code to catch any potential errors.
 
-Once approved and merged, your changes will appear in the `develop` branch. It's now time to fast-forward your fork to the source repository. This ensures your fork develop branch is in sync with the source develop branch...
+Once approved and merged, your changes will appear in the `main` branch. It's now time to fast-forward your fork to the source repository. This ensures your fork develop branch is in sync with the source develop branch...
 
 ## Sync your Fork
 
-Your fork `develop` branch is now behind the source `develop` branch. To fast-forward it to the latest changes, click the **Fetch upstream** button:
+Your fork `main` branch is now behind the source `main` branch. To fast-forward it to the latest changes, click the **Fetch upstream** button:
 
-![](assets/docs/sync-branch.png)
+![](https://github.com/ietf-tools/common/raw/main/assets/docs/sync-branch.png)
 
 Note that you also need to fast-forward your **local machine** `develop` branch. This can again be done quickly from your editor / GUI tool. If you're using the command line, run these commands:
 
 ```sh
-git checkout develop
-git merge --ff-only origin/develop
+git checkout main
+git merge --ff-only origin/main
 ```
 
 > :information_source: While you could use the `git pull` command to achieve the same thing, this ensures that only a fast-forward operation will be executed and not a merge (which is most likely not what you want). You can read more about the different ways of pulling the latest changes via [git merge](https://git-scm.com/docs/git-merge), [git pull](https://git-scm.com/docs/git-pull) and [git rebase](https://git-scm.com/docs/git-rebase).
@@ -218,9 +214,9 @@ If you prefer to use the command line:
     ```
     This will save the current state of your branch so that it can be re-applied later.
 
-2. Run the [git rebase](https://git-scm.com/docs/git-rebase) command to fast-forward your branch to the latest commit from `develop` and then apply all your new commits on top of it:
+2. Run the [git rebase](https://git-scm.com/docs/git-rebase) command to fast-forward your branch to the latest commit from `main` and then apply all your new commits on top of it:
     ```sh
-    git rebase develop
+    git rebase main
     ```
     You can add the `-i` flag to the above command to trigger an interactive rebase session. Instead of blindly moving all of the commits to the new base, interactive rebasing gives you the opportunity to alter individual commits in the process.
 
@@ -241,7 +237,8 @@ If you prefer to use the command line:
 * Reference issues and pull requests liberally after the first line
 * When only changing documentation, include `[ci skip]` in the commit title
 * Consider starting the commit message with one of the following keywords (see [Conventional Commits](https://www.conventionalcommits.org/) specification):
-    * `build:` Changes that affect the build system or external dependencies
+    * `chore`: Tool changes, configuration changes and changes to things that do not actually go into production
+    * `ci:` Changes that affect the build system or external dependencies
     * `docs:` Documentation only changes
     * `feat:` A new feature
     * `fix:` A bug fix
@@ -249,40 +246,6 @@ If you prefer to use the command line:
     * `refactor:` A code change that neither fixes a bug nor adds a feature
     * `style:` Changes that do not affect the meaning of the code *(white-space, formatting, missing semi-colons, etc)*
     * `test:` Adding missing tests or correcting existing tests
-
-### Javascript
-
-#### JS Coding Style
-
-[StandardJS](https://standardjs.com/) is the style guide used for this project.
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-
-ESLint and EditorConfig configuration files are present in the project root. Most editors can automatically enforce these [rules](https://standardjs.com/rules.html) and even format your code accordingly as you type.
-
-These rules apply whether the code is inside a `.js` file or as part of a `.vue` / `.html` file.
-
-Refer to the [rules](https://standardjs.com/rules.html) for a complete list with examples. However, here are some of the major ones:
-
-* No semi-colons! :no_entry_sign:
-* Use 2 spaces for indentation
-* Use single quotes for strings (except to avoid escaping)
-* Use camelCase when naming variables and functions
-* Always use `===` instead of `==` (unless you **specifically** need to check for `null || undefined`)
-* No unused variables
-* Keep `else` statements on the same line as their curly braces
-* No trailing commas
-* Files must end with a newline *(only for new .js / .vue files. See the Python directives below for other file types.)*
-
-Finally, avoid using `var` to declare variables. You should instead use `const` and `let`. `var` unnecessarily pollutes the global scope and there's almost no use-case where it should be used.
-
-#### JS Tests
-
-The [Cypress](https://www.cypress.io/) framework is used for javascript testing (in addition to end-to-end testing which covers the whole application).
-
-The tests are located under the `cypress/` directory.
-
-*To be expanded*
 
 ### Python
 
@@ -301,10 +264,7 @@ The tests are located under the `cypress/` directory.
 #### Python Tests
 
 * Reasonably comprehensive test suites should be written and committed to the project repository.
-* Projects written for Django should use Django's test facility, in files tests.py in each application directory.
-* Other projects, written in Python, should use Python's doctests or unittest framework.
-* Other projects should use the best practice for the respective code environment for testing.
-* As of release 5.12.0, the Django test suite for the datatracker includes tests which measure the test suite's code, template, and URL coverage and fails if it drops below that of the latest release. When merged in, your code should not make the test coverage drop below the latest release. Please run the full test suite regularly, to keep an eye on your coverage numbers.
-* Please shoot for a test suite with at least 80% code coverage for new code, as measured by the built-in coverage tests for the datatracker or standalone use of ​coverage.py for other Python projects. For non-Python projects, use the most appropriate test coverage measurement tool.
-* For the datatracker, aim for 100% test suite template coverage for new templates.
+* Projects written in Python, should use Python's doctests or unittest framework.
+* Please shoot for a test suite with at least 80% code coverage for new code, as measured by the built-in coverage tests for the IETF_PROJECT_NAME or standalone use of coverage.py for other Python projects. For non-Python projects, use the most appropriate test coverage measurement tool.
+* For the IETF_PROJECT_NAME, aim for 100% test suite template coverage for new templates.
 * When a reported functional bug is being addressed, a test must be written or updated to fail while the bug is present and succeed when it has been fixed, and made part of the bugfix. This is not applicable for minor functional bugs, typos or template changes.
