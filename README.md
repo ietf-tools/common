@@ -1,2 +1,2 @@
 # common
-Shared resources for ietf-tools repositories
+Shared resources and templates for ietf-tools repositories
