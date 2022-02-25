@@ -1,0 +1,12 @@
+# -------------------------------------------------------------------
+# List of logos to generate
+# -------------------------------------------------------------------
+#
+# Accepted properties:
+#   key: (required) filename of the output svg file
+#   label: (required) text that will be displayed
+#   color: (optional) HEX color code of the label (e.g. #FF0000)
+
+input:
+  - key: test
+    label: TEST LABEL
