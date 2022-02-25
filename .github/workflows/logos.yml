@@ -21,8 +21,8 @@ jobs:
     - name: Generate
       working-directory: scripts/logo-generate
       env:
-        OUTPUT_PATH: ${{ env.GITHUB_WORKSPACE }}/assets/logos
-        IDENTITIES_PATH: ${{ env.GITHUB_WORKSPACE }}/identities.yml
+        OUTPUT_PATH: ${{ github.workspace }}/assets/logos
+        IDENTITIES_PATH: ${{ github.workspace }}/identities.yml
       run: |
         npm ci
         node index
