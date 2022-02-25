@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 {{DOCWIDTH}} 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;background-color:#FFFFFF;">
-    <rect x="0" y="0" width="{{DOCWIDTH}}" height="330" style="fill:rgb(255,255,255);"/>
+<svg width="100%" height="100%" viewBox="0 0 {{DOCWIDTH}} 330" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(0.707107,-0.707107,0.707107,0.707107,-212.718,125.508)">
         <rect x="184.1" y="233.984" width="98.094" height="98.094" style="fill:rgb(11,140,197);"/>
     </g>
@@ -37,4 +36,10 @@
     </g>
     <path d="M152.291,211.378L0,59.087L0,77.869L152.275,230.144L152.291,230.128L152.307,230.144L221.85,160.601L291.394,230.144L300.785,220.753L222.062,142.031L221.85,142.243L221.638,142.031L152.291,211.378Z" style="fill:rgb(255,209,62);"/>
     {{LOGOTYPE}}
+    <defs>
+        <linearGradient id="TextGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" style="stop-color:rgb(2,161,215);stop-opacity:1"/>
+            <stop offset="1" style="stop-color:rgb(6,72,101);stop-opacity:1"/>
+        </linearGradient>
+    </defs>
 </svg>

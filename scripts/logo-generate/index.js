@@ -43,7 +43,7 @@ try {
       output += p.toSVG()
     }
     for (const p of paths) {
-      p.fill = identity.color ?? '#002D3C'
+      p.fill = identity.color ?? 'url(#TextGradient)'
       output += p.toSVG()
     }
 

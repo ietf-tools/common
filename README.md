@@ -11,8 +11,8 @@ Upon new commit, logos will automatically be (re)generated and stored in `assets
 
 ### Accepted Properties
 
-| Field   | Description                               | Required                   | Default   |
-|---------|-------------------------------------------|----------------------------|-----------|
-| `key`   | Filename of the output SVG file           | :white_check_mark:         |           |
-| `label` | Text to display                           | :white_check_mark:         |           |
-| `color` | HEX color code to use to render the label | :x:                        | `#002D3C` |
+| Field   | Description                               | Required                   | Default    |
+|---------|-------------------------------------------|----------------------------|------------|
+| `key`   | Filename of the output SVG file           | :white_check_mark:         |            |
+| `label` | Text to display                           | :white_check_mark:         |            |
+| `color` | HEX color code to use to render the label | :x:                        | *gradient* |
