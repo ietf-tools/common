@@ -29,8 +29,10 @@ try {
     console.info(`Generating SVG for ${identity.key}...`)
 
     // Calculate color gradient
-    const lightColor = Color(identity.color ?? '#02A1D7')
-    const darkColor = lightColor.blacken(1.75)
+    const bottomColor = Color(identity.color ?? '#02A1D7')
+    const topColor = bottomColor.blacken(1.75)
+    const darkColor = bottomColor.blacken(0.75)
+    const lightColor = bottomColor.desaturate(0.35).lighten(0.35)
 
     // Generate font paths
     const paths = font.getPaths(identity.label, 450, 235, 200)
@@ -55,8 +57,10 @@ try {
     // Inject into base template
     const final = base.replaceAll('{{DOCWIDTH}}', maxX + 100)
       .replace('{{LOGOTYPE}}', output)
-      .replace('{{TOPCOLOR}}', darkColor.hex())
-      .replace('{{BOTTOMCOLOR}}', lightColor.hex())
+      .replaceAll('{{TOPCOLOR}}', topColor.hex())
+      .replaceAll('{{BOTTOMCOLOR}}', bottomColor.hex())
+      .replaceAll('{{DARKCOLOR}}', darkColor.hex())
+      .replaceAll('{{LIGHTCOLOR}}', lightColor.hex())
 
     // Write to file
     await fs.writeFile(path.join(outputPath, `${identity.key}.svg`), final)
