@@ -10,3 +10,6 @@
 input:
   - key: test
     label: TEST LABEL
+  - key: test2
+    label: DATATRACKER
+    color: '#8202D7'

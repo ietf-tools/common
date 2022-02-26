@@ -2,6 +2,7 @@ import * as fs from 'fs/promises'
 import * as opentype from 'opentype.js'
 import * as yaml from 'js-yaml'
 import * as path from 'path'
+import Color from 'color'
 
 try {
   // Create output folder
@@ -27,6 +28,10 @@ try {
   for (const identity of identities.input) {
     console.info(`Generating SVG for ${identity.key}...`)
 
+    // Calculate color gradient
+    const lightColor = Color(identity.color ?? '#02A1D7')
+    const darkColor = lightColor.blacken(1.75)
+
     // Generate font paths
     const paths = font.getPaths(identity.label, 450, 235, 200)
     const pathsShadow = font.getPaths(identity.label, 451, 236, 200)
@@ -43,12 +48,15 @@ try {
       output += p.toSVG()
     }
     for (const p of paths) {
-      p.fill = identity.color ?? 'url(#TextGradient)'
+      p.fill = 'url(#TextGradient)'
       output += p.toSVG()
     }
 
     // Inject into base template
-    const final = base.replaceAll('{{DOCWIDTH}}', maxX + 100).replace('{{LOGOTYPE}}', output)
+    const final = base.replaceAll('{{DOCWIDTH}}', maxX + 100)
+      .replace('{{LOGOTYPE}}', output)
+      .replace('{{TOPCOLOR}}', darkColor.hex())
+      .replace('{{BOTTOMCOLOR}}', lightColor.hex())
 
     // Write to file
     await fs.writeFile(path.join(outputPath, `${identity.key}.svg`), final)

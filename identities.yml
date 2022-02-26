@@ -10,6 +10,7 @@
 input:
   - key: datatracker
     label: DATATRACKER
+    color: '#8202D7'
   - key: pypi-publish
     label: PYPI-PUBLISH
   - key: rfc2html
@@ -24,5 +25,6 @@ input:
     label: SVGCHECK
   - key: wagtail-site
     label: WAGTAIL SITE
+    color: '#8202D7'
   - key: xml2rfc
     label: XML2RFC
