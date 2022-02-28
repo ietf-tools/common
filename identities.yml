@@ -26,6 +26,9 @@ input:
     label: RFC-XMLDIFF
   - key: svgcheck
     label: SVGCHECK
+  - key: tools-workshops
+    label: TOOLS WORKSHOPS
+    color: '#4CAF50'
   - key: wagtail-site
     label: WAGTAIL SITE
     color: '#8202D7'
