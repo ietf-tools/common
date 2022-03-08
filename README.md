@@ -16,3 +16,11 @@ Upon new commit, logos will automatically be (re)generated and stored in `assets
 | `key`   | Filename of the output SVG file           | :white_check_mark:         |           |
 | `label` | Text to display                           | :white_check_mark:         |           |
 | `color` | HEX color code to use to render the label | :x:                        | `#02A1D7` |
+
+### Colors
+
+Different colors are used depending on the project type:
+
+- `#02A1D7`: Tools / CLI Projects *(default)*
+- `#8202D7`: Websites
+- `#4CAF50`: Documentation Repositories
