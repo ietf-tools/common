@@ -8,6 +8,9 @@
 #   color: (optional) HEX color code of the label (e.g. #FF0000)
 
 input:
+  - key: common-bootstrap-theme
+    label: BOOTSTRAP 5 THEME
+    color: '#C2185B'
   - key: datatracker
     label: DATATRACKER
     color: '#8202D7'
@@ -27,6 +30,9 @@ input:
     label: RFCTOOLS-COMMON
   - key: rfc-xmldiff
     label: RFC-XMLDIFF
+  - key: semver-action
+    label: SEMVER GITHUB ACTION
+    color: '#C2185B'
   - key: svgcheck
     label: SVGCHECK
   - key: tools-workshops
