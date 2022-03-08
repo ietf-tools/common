@@ -13,3 +13,6 @@ input:
   - key: test2
     label: DATATRACKER
     color: '#8202D7'
+  - key: tools-workshops
+    label: TOOLS WORKSHOPS
+    color: '#4CAF50'
