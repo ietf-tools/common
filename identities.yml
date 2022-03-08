@@ -14,6 +14,9 @@ input:
   - key: ietf-guides
     label: IETF GUIDES
     color: '#8202D7'
+  - key: mailarch
+    label: MAIL ARCHIVE
+    color: '#8202D7'
   - key: pypi-publish
     label: PYPI-PUBLISH
   - key: rfc2html
