@@ -16,3 +16,6 @@ input:
   - key: tools-workshops
     label: TOOLS WORKSHOPS
     color: '#4CAF50'
+  - key: semver-action
+    label: SEMVER GitHub ACTION
+    color: '#C2185B'
