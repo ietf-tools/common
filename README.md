@@ -24,3 +24,4 @@ Different colors are used depending on the project type:
 - `#02A1D7`: Tools / CLI Projects *(default)*
 - `#8202D7`: Websites
 - `#4CAF50`: Documentation Repositories
+- `#C2185B`: Modules
