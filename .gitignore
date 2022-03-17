@@ -1,2 +1,3 @@
 node_modules
-scripts/logo-generate/output
+/scripts/logo-generate/output
+/scripts/fix-changelog/data
