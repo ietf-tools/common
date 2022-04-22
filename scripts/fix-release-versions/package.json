@@ -1,0 +1,15 @@
+{
+  "name": "fix-release-versions",
+  "version": "1.0.0",
+  "description": "Fix Release Versions to remove v prefix",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IETF Trust",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "octokit": "^1.7.1"
+  }
+}
