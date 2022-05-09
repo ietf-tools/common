@@ -17,6 +17,9 @@ input:
   - key: ietf-guides
     label: IETF GUIDES
     color: '#8202D7'
+  - key: ietf-wikijs-auth
+    label: IETF WIKI.JS AUTH
+    color: '#C2185B'
   - key: mailarch
     label: MAIL ARCHIVE
     color: '#8202D7'
