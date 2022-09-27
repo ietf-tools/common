@@ -31,6 +31,8 @@ input:
     label: RFCLINT
   - key: rfctools-common
     label: RFCTOOLS-COMMON
+  - key: rfc-errata
+    label: RFC-ERRATA
   - key: rfc-xmldiff
     label: RFC-XMLDIFF
   - key: semver-action
