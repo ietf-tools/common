@@ -14,6 +14,9 @@ input:
   - key: datatracker
     label: DATATRACKER
     color: '#8202D7'
+  - key: grouprepo-backup
+    label: GROUP/DRAFT REPO BACKUP
+    color: '#C2185B'
   - key: idnits
     label: IDNITS
   - key: ietf-guides
