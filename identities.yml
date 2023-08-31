@@ -40,8 +40,8 @@ input:
     label: RFC-ERRATA
   - key: rfc-xmldiff
     label: RFC-XMLDIFF
-  - key: rpc-frontend
-    label: RPC Frontend
+  - key: rpc
+    label: RPC
     color: '#8202D7'
   - key: semver-action
     label: SEMVER GITHUB ACTION
