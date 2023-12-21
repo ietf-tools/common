@@ -25,6 +25,9 @@ input:
   - key: ietf-wikijs
     label: IETF WIKI.JS
     color: '#8202D7'
+  - key: infra-cloud
+    label: INFRA CLOUD
+    color: '#C2185B'
   - key: mailarch
     label: MAIL ARCHIVE
     color: '#8202D7'
