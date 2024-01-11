@@ -8,6 +8,9 @@
 #   color: (optional) HEX color code of the label (e.g. #FF0000)
 
 input:
+  - key: authortools
+    label: AUTHOR TOOLS
+    color: '#8202D7'
   - key: common-bootstrap-theme
     label: BOOTSTRAP 5 THEME
     color: '#C2185B'
