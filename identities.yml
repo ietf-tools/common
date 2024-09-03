@@ -41,6 +41,9 @@ input:
     label: PYPI-PUBLISH
   - key: rfc2html
     label: RFC2HTML
+  - key: rfced-www
+    label: RFC Editor Website
+    color: '#8202D7'
   - key: rfclint
     label: RFCLINT
   - key: rfctools-common
