@@ -22,6 +22,9 @@ input:
     color: '#C2185B'
   - key: idnits
     label: IDNITS
+  - key: idnits-www
+    label: IDNITS Website
+    color: '#8202D7
   - key: ietf-guides
     label: IETF GUIDES
     color: '#8202D7'
