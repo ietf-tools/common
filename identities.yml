@@ -37,6 +37,8 @@ input:
   - key: keycloak
     label: KEYCLOAK
     color: '#8202D7'
+  - key: mail-tlsa-check-exporter
+    label: Mail TLSA Check Exporter
   - key: mailarch
     label: MAIL ARCHIVE
     color: '#8202D7'
