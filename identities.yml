@@ -74,5 +74,8 @@ input:
   - key: wagtail-site
     label: WAGTAIL SITE
     color: '#8202D7'
+  - key: workflow-dispatch-action
+    label: WORKFLOW DISPATCH ACTION
+    color: '#C2185B'
   - key: xml2rfc
     label: XML2RFC
