@@ -66,6 +66,9 @@ input:
   - key: semver-action
     label: SEMVER GITHUB ACTION
     color: '#C2185B'
+  - key: sidemeetings
+    label: Side Meetings
+    color: '#8202D7'
   - key: svgcheck
     label: SVGCHECK
   - key: tools-workshops
